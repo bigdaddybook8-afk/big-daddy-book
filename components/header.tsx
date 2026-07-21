@@ -33,7 +33,7 @@ export function Header() {
         {/* Logo */}
         <Link href="#" className="flex items-center gap-2 flex-shrink-0">
           <Image
-            src="/mahadev-logo.png"
+            src="/images/big-daddy-book-logo.png"
             alt="Mahadev Book"
             width={50}
             height={50}
