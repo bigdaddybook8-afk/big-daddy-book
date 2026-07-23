@@ -5,8 +5,11 @@ export function Footer() {
 
   const scrollToSection = (id: string) => {
     const element = document.getElementById(id);
+
     if (element) {
-      element.scrollIntoView({ behavior: "smooth" });
+      element.scrollIntoView({
+        behavior: "smooth",
+      });
     }
   };
 
@@ -19,37 +22,32 @@ export function Footer() {
   };
 
   return (
-    <footer
-      id="contact"
-      className="relative bg-white dark:bg-blue-950 border-t border-amber-500/30 py-8 sm:py-12 md:py-16"
-    >
-      <div className="absolute inset-0 bg-gradient-to-b from-transparent via-blue-900/10 to-transparent"></div>
-
-      <div className="relative container mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-8 mb-12">
+    <footer className="border-t border-gray-200 bg-white text-gray-900 transition-colors duration-300 dark:border-white/10 dark:bg-[#0a0712] dark:text-white">
+      <div className="container mx-auto px-4 py-14 sm:px-6 lg:px-8">
+        <div className="grid grid-cols-1 gap-10 sm:grid-cols-2 lg:grid-cols-4">
           {/* Logo */}
           <div>
-            <h3 className="text-amber-500 font-bold mb-4 text-lg">
+            <h3 className="mb-4 text-2xl font-bold text-amber-500">
               BIG DADDY BOOK
             </h3>
 
-            <p className="text-gray-400 text-sm">
-              India&apos;s Premier Cricket & Casino Platform
+            <p className="max-w-xs text-sm leading-7 text-gray-600 dark:text-gray-400">
+              India's Premier Cricket & Casino Platform with secure deposits,
+              instant withdrawals, premium gaming, and 24×7 customer support.
             </p>
           </div>
 
           {/* Quick Links */}
-
           <div>
-            <h4 className="text-white font-bold mb-4 text-lg">
+            <h4 className="mb-5 text-lg font-semibold text-gray-900 dark:text-white">
               Quick Links
             </h4>
 
-            <ul className="space-y-2 text-gray-400 text-sm">
+            <ul className="space-y-3">
               <li>
                 <button
                   onClick={() => scrollToSection("home")}
-                  className="hover:text-amber-400 transition"
+                  className="text-sm text-gray-600 transition hover:text-amber-500 dark:text-gray-400"
                 >
                   Home
                 </button>
@@ -58,7 +56,7 @@ export function Footer() {
               <li>
                 <button
                   onClick={() => scrollToSection("about")}
-                  className="hover:text-amber-400 transition"
+                  className="text-sm text-gray-600 transition hover:text-amber-500 dark:text-gray-400"
                 >
                   About
                 </button>
@@ -67,7 +65,7 @@ export function Footer() {
               <li>
                 <button
                   onClick={() => scrollToSection("how")}
-                  className="hover:text-amber-400 transition"
+                  className="text-sm text-gray-600 transition hover:text-amber-500 dark:text-gray-400"
                 >
                   How It Works
                 </button>
@@ -76,13 +74,12 @@ export function Footer() {
           </div>
 
           {/* Support */}
-
           <div>
-            <h4 className="text-white font-bold mb-4 text-lg">
+            <h4 className="mb-5 text-lg font-semibold text-gray-900 dark:text-white">
               Support
             </h4>
 
-            <ul className="space-y-2 text-gray-400 text-sm">
+            <ul className="space-y-3">
               <li>
                 <button
                   onClick={() =>
@@ -90,7 +87,7 @@ export function Footer() {
                       "Hello! I would like to contact Big Daddy Book support."
                     )
                   }
-                  className="hover:text-amber-400 transition"
+                  className="text-sm text-gray-600 transition hover:text-green-500 dark:text-gray-400"
                 >
                   Contact Us
                 </button>
@@ -100,10 +97,10 @@ export function Footer() {
                 <button
                   onClick={() =>
                     openWhatsApp(
-                      "Hi! I have a few questions regarding your platform. Could you please help me?"
+                      "Hi! I have a few questions regarding your platform."
                     )
                   }
-                  className="hover:text-amber-400 transition"
+                  className="text-sm text-gray-600 transition hover:text-green-500 dark:text-gray-400"
                 >
                   FAQ
                 </button>
@@ -113,10 +110,10 @@ export function Footer() {
                 <button
                   onClick={() =>
                     openWhatsApp(
-                      "Hello! I need assistance with my account. Please help me."
+                      "Hello! I need assistance with my account."
                     )
                   }
-                  className="hover:text-amber-400 transition"
+                  className="text-sm text-gray-600 transition hover:text-green-500 dark:text-gray-400"
                 >
                   Help Center
                 </button>
@@ -125,9 +122,8 @@ export function Footer() {
           </div>
 
           {/* Contact */}
-
           <div>
-            <h4 className="text-white font-bold mb-4 text-lg">
+            <h4 className="mb-5 text-lg font-semibold text-gray-900 dark:text-white">
               Contact
             </h4>
 
@@ -137,16 +133,18 @@ export function Footer() {
                   "Hello! I want to get my Big Daddy Book ID."
                 )
               }
-              className="text-gray-400 text-sm hover:text-green-400 transition"
+              className="rounded-lg border border-green-500 px-5 py-3 text-sm font-medium text-green-600 transition hover:bg-green-500 hover:text-white dark:text-green-400"
             >
-              WhatsApp: Available 24/7
+              WhatsApp Support <br />
+              Available 24×7
             </button>
           </div>
         </div>
 
-        <div className="border-t border-amber-500/30 pt-8">
-          <p className="text-center text-gray-500 text-sm">
-            © 2026 BIG DADDY BOOK. All Rights Reserved.
+        {/* Bottom */}
+        <div className="mt-12 border-t border-gray-200 pt-6 dark:border-white/10">
+          <p className="text-center text-sm text-gray-500 dark:text-gray-400">
+            © 2026 <span className="font-semibold text-amber-500">BIG DADDY BOOK</span>. All Rights Reserved.
           </p>
         </div>
       </div>
