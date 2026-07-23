@@ -3,17 +3,17 @@ import type { Metadata, Viewport } from 'next'
 import './globals.css'
 
 export const metadata: Metadata = {
-  title: 'Mahadev Book - India\'s #1 Cricket & Casino Platform',
-  description: 'Experience the ultimate sports betting and casino gaming platform. Live cricket odds, instant deposits & withdrawals, 24/7 support. Get your Mahadev ID now!',
+  title: 'Big-Daddy Book - India\'s #1 Cricket & Casino Platform',
+  description: 'Experience the ultimate sports betting and casino gaming platform. Live cricket odds, instant deposits & withdrawals, 24/7 support. Get your Big-Daddy ID now!',
   generator: 'v0.app',
   icons: {
     icon: [
       {
-        url: '/icon-light-32x32.png',
+        url: '/big-daddy-book-logo.png',
         media: '(prefers-color-scheme: light)',
       },
       {
-        url: '/icon-dark-32x32.png',
+        url: '/big-daddy-book-logo-dark.png',
         media: '(prefers-color-scheme: dark)',
       },
       {

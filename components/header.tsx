@@ -22,7 +22,7 @@ export function Header() {
     { label: 'Home', id: 'home' },
     { label: 'About Us', id: 'about' },
     { label: 'How It Works', id: 'how' },
-    { label: 'Celebs Love Us', id: 'celebs' },
+    { label: 'Built on Trust', id: 'celebs' },
     { label: 'Why Big Daddy Book', id: 'why' },
     { label: 'Contact Us', id: 'contact' },
   ]
@@ -34,7 +34,7 @@ export function Header() {
         <Link href="#" className="flex items-center gap-2 flex-shrink-0">
           <Image
             src="/images/big-daddy-book-logo.png"
-            alt="Mahadev Book"
+            alt="Big Daddy Book"
             width={50}
             height={50}
             className="w-10 h-10 sm:w-12 sm:h-12"

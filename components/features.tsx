@@ -53,7 +53,7 @@ const features = [
 export function Features() {
   return (
     <section
-      id="features"
+      id="why"
       className="relative overflow-hidden bg-[#140a23] py-16 lg:py-24"
     >
       {/* Background */}

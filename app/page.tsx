@@ -4,10 +4,10 @@ import { Header } from '@/components/header'
 import { Hero } from '@/components/hero'
 import { About } from '@/components/about'
 import { HowItWorks } from '@/components/how-it-works'
-import { Celebs } from '@/components/celebs'
 import { Features } from '@/components/features'
 import { Footer } from '@/components/footer'
 import { ThemeProvider } from '@/components/theme-provider'
+import { Celebs } from '@/components/celebs'
 
 export default function Page() {
   return (
@@ -17,7 +17,7 @@ export default function Page() {
         <Hero />
         <About />
         <HowItWorks />
-        {/* <Celebs /> */}
+        <Celebs />
         <Features />
         <Footer />
       </main>

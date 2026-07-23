@@ -51,7 +51,7 @@ export function Hero() {
             <div className="relative container mx-auto px-6 lg:px-10">
                 <div className="grid grid-cols-1 items-center gap-10 lg:grid-cols-2 lg:gap-16">
                     {/* ================= IMAGE ================= */}
-                    <div className="order-1 flex justify-center lg:order-2">
+                    <div className="order-2 flex justify-center lg:order-2">
                         <div className="relative h-[300px] w-[300px] sm:h-[380px] sm:w-[380px] md:h-[450px] md:w-[450px] lg:h-[550px] lg:w-[550px]">
                             <AnimatePresence mode="wait">
                                 <motion.div
@@ -124,14 +124,14 @@ export function Hero() {
                     </div>
 
                     {/* ================= CONTENT ================= */}
-                    <div className="order-2 space-y-6 text-center lg:order-1 lg:text-left">
+                    <div className="order-1 space-y-6 text-center lg:order-1 lg:text-left">
                         <div className="inline-block rounded bg-amber-500 px-4 py-2 text-sm font-semibold text-white">
                             India&apos;s Premier Cricket & Casino Platform
                             
                         </div>
 
-                        <h1 className="text-4xl font-bold leading-tight text-black dark:text-white sm:text-5xl lg:text-7xl">
-                            ♠ 👑 𝓑𝓘𝓖-𝓓𝓐𝓓𝓓𝓨 𝓑𝓞𝓞𝓚 👑 ♣
+                        <h1 className="text-4xl font-bold leading-tight text-black dark:text-white sm:text-5xl lg:text-5xl xl:text-7xl">
+                            ♠ 👑⚜ 𝐁𝐈𝐆 𝐃𝐀𝐃𝐃𝐘 𝐁𝐎𝐎𝐊 ⚜👑 ♣
                         </h1>
 
                         <h2 className="text-xl font-semibold text-amber-500 sm:text-2xl">
